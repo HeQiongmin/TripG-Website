@@ -1,0 +1,43 @@
+
+ul {
+	list-style: none;
+	background-color: #fff;
+	float: left;
+	clear: left;
+	height: auto;
+}
+
+ul li {
+	float: left;
+	display: inline; /*For ignore double margin in IE6*/
+	margin: 0 10px;
+}
+
+ul li a {
+	text-decoration: none;
+	float:left;
+	color: #000000;
+	cursor: pointer;
+	font:18px "Arial";
+}
+
+ul li a span {
+	margin: 0 10px 0 -10px;
+	padding: 1px 8px 0px 8px;
+	position: relative; /*To fix IE6 problem (not displaying)*/
+	float:left;
+	height: 63px;
+	width: 90px;
+	text-align: center;
+	line-height: 63px;
+}
+
+/*变色*/
+ul.green li a.current, ul.green li a:hover  {
+ 	color: #ffffff;
+	background: #00c5c2;
+}
+
+ul.green li a.current span, ul.green li a:hover span {
+	background: #00c5c2;
+}
