@@ -376,17 +376,23 @@ div#preloader {
 /*=====================================================
 04.section title css goes here
 =======================================================*/
+.single-title{
+  color: #00c5c2;
+  text-align: center;
+  margin-top: 82px;
+  text-transform: uppercase;
+}
 .title{
   margin-bottom: 32px;
   margin-top: 134px;
   vertical-align: center;
 }
 
-.section-title{
+.section-title,
+.section-title-version-2{
   display: inline-block;
   float: left;
 }
-
 
 .section-title-white,
 .section-title-white-2 {
@@ -401,6 +407,10 @@ div#preloader {
   font: bold 24px 'Arial';
   text-transform: uppercase;
 }
+.section-title-version-2 h2{
+  font: bold 24px 'Arial';
+}
+
 .section-title-white p,
 .section-title-white-2 p {
   color: #727272;
@@ -826,6 +836,35 @@ header .main_nav .main-menu > li.active a:before {
 }
 .popular-packages .single-package .package-calto-action .ct-action li:last-child i {
   font-size: 20px;
+  color: #f15b5c;
+}
+.advbox{
+  background: #fff;
+  margin-bottom: 30px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  position: relative;
+  -webkit-box-shadow: 0 0 20px 0 rgba(47, 47, 47, 0.05);
+  box-shadow: 0 0 20px 0 rgba(47, 47, 47, 0.05);
+  transition: all ease-in-out 0.5s;
+}
+.advbox .item {
+  width: 90%;
+  height: 75px;
+  margin:0px auto 20px auto;
+  background: red;
+}
+.advbox .package-content {
+  padding: 20px;
+}
+.advbox .package-content h3 a {
+  font-weight: 600;
+  color: #2f2f2f;
+  font-size: 20px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+.advbox .package-content h3 a:hover {
   color: #f15b5c;
 }
 /*=====================================================
@@ -1678,92 +1717,6 @@ header .main_nav .main-menu > li.active a:before {
  18.home version 2 welcome section css goes here
  =======================================================*/
 
-.section-title-version-2 h2,
-.section-title-version-2-white h2,
-.section-title-version-2-black h2 {
-  font-size: 34px;
-  font-weight: 600;
-  padding-bottom: 8px !important;
-  z-index: 2;
-  padding: 0;
-}
-.section-title-version-2 h5,
-.section-title-version-2-white h5,
-.section-title-version-2-black h5 {
-  font-size: 18px;
-  color: #323232;
-  font-weight: 400;
-  line-height: 30px;
-}
-.section-title-version-2-white h2,
-.section-title-version-2-black h2 {
-  color: #ffffff;
-}
-.section-title-version-2-white p,
-.section-title-version-2-black p {
-  color: #ffffff;
-  font-size: 15px;
-  padding-bottom: 45px;
-}
-.section-title-version-2-black h2 {
-  color: #2f2f2f;
-}
-.section-title-version-2-black p {
-  color: #727272;
-}
-/*=====================================================
- 19.home version 2 welcome  section css goes here
- =======================================================*/
-
-.welcome-area {
-  padding: 100px 0 200px;
-}
-.welcome-area .section-title-version-2 {
-  padding-top: 30px;
-}
-.welcome-area .section-title-version-2 h2 {
-  margin-bottom: 20px;
-  font-size: 34px;
-}
-.welcome-area .single-welcome-area {
-  position: relative;
-}
-.welcome-area .single-welcome-area .single-imag .img-thumbnail {
-  background-color: #f7f7f7;
-  border-radius: 0px;
-  padding: 15px;
-  border: none;
-}
-.welcome-area .single-welcome-area .overlay-image {
-  bottom: -40px;
-  height: auto;
-  position: absolute;
-  right: -30px;
-  max-width: 100%;
-}
-.welcome-area .single-welcome-area .overlay-image .img-thumbnail {
-  background-color: #f7f7f7;
-  border-radius: 0px;
-  padding: 10px;
-  border: none;
-}
-.welcome-area .single-welcome-text {
-  padding-left: 60px;
-}
-.welcome-area .single-welcome-text .welcome-content p {
-  font-size: 15px;
-  font-weight: 15px;
-  color: #727272;
-}
-.welcome-area .single-welcome-text .welcome-content a {
-  margin-top: 40px;
-  padding: 15px 40px !important;
-  font-size: 15px;
-  font-size: 500;
-}
-.welcome-area .single-welcome-text .welcome-content a:hover {
-  background: #37b721;
-}
 /*=====================================================
  20.home version 2 tour-package section css goes here
  =======================================================*/
