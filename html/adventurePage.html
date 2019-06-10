@@ -47,6 +47,8 @@
 
 	<link href="../css/global.css" rel="stylesheet">
 	<link href="../css/sliding.css" rel="stylesheet">
+	<!-- 下拉框 css -->
+	<link rel="stylesheet" type="text/css" href="../css/selectFilter.css" />
 
 </head>
 <body>
@@ -57,15 +59,15 @@
     <div class="loader-section section-right"></div>
 </div>
 <!-- header area start here -->
-<!-- 导航栏 -->
+
 <div class="navbar">
 	<div class="logo">
 		<a href="homePage.html"><img src="../images/logos.jpg" alt="logo"></a>
 	</div>
 	<div class="nav">
 		<ul class="green">
-			<li data_temp_dwid="1"><a href="homePage.html" title="home" class="current" data_temp_dwid="2"><span data_temp_dwid="3">Home</span></a></li>
-			<li><a href="adventurePage.html" title="Adventure"><span>Adventure</span></a></li>
+			<li data_temp_dwid="1"><a href="homePage.html" title="home" data_temp_dwid="2"><span data_temp_dwid="3">Home</span></a></li>
+			<li><a href="adventurePage.html" title="Adventure" class="current"><span>Adventure</span></a></li>
 			<li><a href="#" title="Shop"><span>Shop</span></a></li>
 			<li><a href="#" title="Forum"><span>Forum</span></a></li>
 			<li><a href="#" title="About"><span>About</span></a></li>
@@ -337,75 +339,97 @@
 </section>
 <!-- header tab based search area end-->
 
-<!-- 类别-->
+<div class="single-title">
+	<h2>Your Itinerary</h2>
+</div>
+<!-- Itinerary-->
 <section class="popular-packages">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="title">
-					<div class="section-title">
-						<h2>categories</h2>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="section-title-version-2 text-center">
+						<h2>Pickup Infomation</h2>
 					</div>
-						<a href="#" class="seeall-btn rounded hvr-shutter-out-horizontal">See All Categories  >>></a>
-				</div>
-
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-				<div class="single-package">
-					<div class="package-image">
-						<a href="#"><img src="../images/packages/1.jpg" alt=""></a>
-					</div>
+			<div class="col-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="advbox">
 					<div class="package-content">
-						<h3><a href="" title="">Mountain Trip</a></h3>
-						<p>172 Adventures <span>$500</span>
-						</p>
+						<h3><a href="" title="">Pick Up</a></h3>
+					</div>
+					<div class="item">
+						<!-- 这里开始 -->
+						<div class="filter-box">
+							<div class="filter-text">
+								<input class="filter-title" type="text" readonly placeholder="pleace select" />
+								<i class="icon icon-filter-arrow"></i>
+							</div>
+							<select name="filter">
+								<option value="new york">New York</option>
+								<option value="Guang Zhou">Guang Zhou</option>
+								<option value="Hang Zhou" selected>Hang Zhou</option>
+								<option value="Hong Kong">Hong Kong</option>
+								<option value="Bei Jing">Bei Jing</option>
+								<option value="Xi An">Xi An</option>
+								<option value="1">111</option>
+								<option value="2">222</option>
+								<option value="3">333</option>
+								<option value="4">444</option>
+								<option value="5">555</option>
+								<option value="6">666</option>
+							</select>
+						</div>
+						<!-- 这里结束 -->
+					</div>
+					<div class="item">
+						<!-- 这里开始 -->
+						<div class="filter-text">
+								<input class="filter-title" type="text" readonly placeholder="pleace select" />
+								<i class="icon icon-gps"></i>
+						</div>
+						<!-- 这里结束 -->
 					</div>
 				</div>
 			</div>
 			<!-- single package end -->
 
-			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-				<div class="single-package">
-					<div class="package-image">
-						<a href="#"><img src="../images/packages/2.jpg" alt=""></a>
-					</div>
+			<div class="col-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="advbox">
 					<div class="package-content">
-						<h3><a href="" title="">Extreme activities</a></h3>
-						<p>49 Adventures <span>$700</span>
-						</p>
+						<h3><a href="" title="">Drop off</a></h3>
 					</div>
-				</div>
-			</div>
-			<!-- single package end -->
-
-			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-			<div class="single-package">
-				<div class="package-image">
-					<a href="#"><img src="../images/packages/3.jpg" alt="">
-					</a>
-				</div>
-				<div class="package-content">
-					<h3><a href="" title="">Road Trips</a></h3>
-					<p>252 Adventures <span>$500</span>
-					</p>
-				</div>
-			</div>
-		</div>
-			<!-- single package end -->
-
-
-			<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-				<div class="single-package">
-					<div class="package-image">
-						<a href="#"><img src="../images/packages/4.jpg" alt="">
-						</a>
+					<div class="item">
+						<!-- 这里开始 -->
+						<div class="filter-box2">
+							<div class="filter-text">
+								<input class="filter-title" type="text" readonly placeholder="pleace select" />
+								<i class="icon icon-filter-arrow"></i>
+							</div>
+							<select name="filter">
+								<option value="new york">New York</option>
+								<option value="Guang Zhou">Guang Zhou</option>
+								<option value="Hang Zhou" selected>Hang Zhou</option>
+								<option value="Hong Kong">Hong Kong</option>
+								<option value="Bei Jing">Bei Jing</option>
+								<option value="Xi An">Xi An</option>
+								<option value="1">111</option>
+								<option value="2">222</option>
+								<option value="3">333</option>
+								<option value="4">444</option>
+								<option value="5">555</option>
+								<option value="6">666</option>
+							</select>
+						</div>
+						<!-- 这里结束 -->
 					</div>
-					<div class="package-content">
-						<h3><a href="" title="">Culture Travel</a></h3>
-						<p>279 Adventures <span>$500</span>
-						</p>
+					<div class="item">
+						<!-- 这里开始 -->
+						<div class="filter-text">
+							<input class="filter-title" type="text" readonly placeholder="pleace select" />
+							<i class="icon icon-gps"></i>
+						</div>
+						<!-- 这里结束 -->
 					</div>
 				</div>
 			</div>
@@ -416,244 +440,103 @@
 </section>
 <!--end  popular packajge -->
 
-<!-- 限时-->
-<section class="countdown count-down-bg">
+<!-- Date-->
+<section class="popular-packages">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 col-sm-12-col-xs-12">
-				<div class="count-down-titile">
-					<h2>Special Tour in May, Discover <span class="color-one">Thailand</span> for 50 <br> customers with <span class="color-two">Discount 30%</span> </h2>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="section-title-version-2 text-center">
+					<h2>Departure/Return Date</h2>
 				</div>
-				<div class="count-timer text-center">
-					<div class="time-wrapper">
-						<p>It’s limited seating! Hurry up</p>
-						<div class="timer">
-							<div data-countdown="2019/5/24"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="advbox">
+					<div class="package-content">
+						<h3><a href="" title="">Drop off</a></h3>
+					</div>
+					<div class="item">
+						<!-- 这里开始 -->
+						<div class="filter-box">
+							<div class="filter-text">
+								<input class="filter-title" type="text" readonly placeholder="pleace select" />
+								<i class="icon icon-filter-arrow"></i>
+							</div>
+							<select name="filter">
+								<option value="new york">New York</option>
+								<option value="Guang Zhou">Guang Zhou</option>
+								<option value="Hang Zhou" selected>Hang Zhou</option>
+								<option value="Hong Kong">Hong Kong</option>
+								<option value="Bei Jing">Bei Jing</option>
+								<option value="Xi An">Xi An</option>
+								<option value="1">111</option>
+								<option value="2">222</option>
+								<option value="3">333</option>
+								<option value="4">444</option>
+								<option value="5">555</option>
+								<option value="6">666</option>
+							</select>
 						</div>
+						<!-- 这里结束 -->
+					</div>
+					<div class="item">
+						<!-- 这里开始 -->
+						<div class="filter-text">
+							<input class="filter-title" type="text" readonly placeholder="pleace select" />
+							<i class="icon icon-gps"></i>
+						</div>
+						<!-- 这里结束 -->
 					</div>
 				</div>
-				<div class="buy-now text-center">
-					<a href="#" class="travel-primary-btn hvr-fade">Book Now</a>
+			</div>
+			<!-- single package end -->
+
+			<div class="col-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="advbox">
+					<div class="package-content">
+						<h3><a href="" title="">Return Date</a></h3>
+					</div>
+					<div class="item">
+						<!-- 这里开始 -->
+						<div class="filter-box2">
+							<div class="filter-text">
+								<input class="filter-title" type="text" readonly placeholder="pleace select" />
+								<i class="icon icon-filter-arrow"></i>
+							</div>
+							<select name="filter">
+								<option value="new york">New York</option>
+								<option value="Guang Zhou">Guang Zhou</option>
+								<option value="Hang Zhou" selected>Hang Zhou</option>
+								<option value="Hong Kong">Hong Kong</option>
+								<option value="Bei Jing">Bei Jing</option>
+								<option value="Xi An">Xi An</option>
+								<option value="1">111</option>
+								<option value="2">222</option>
+								<option value="3">333</option>
+								<option value="4">444</option>
+								<option value="5">555</option>
+								<option value="6">666</option>
+							</select>
+						</div>
+						<!-- 这里结束 -->
+					</div>
+					<div class="item">
+						<!-- 这里开始 -->
+						<div class="filter-text">
+							<input class="filter-title" type="text" readonly placeholder="pleace select" />
+							<i class="icon icon-gps"></i>
+						</div>
+						<!-- 这里结束 -->
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<!--end  countdown -->
-
-<section class="destinations_1">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="section-title text-center">
-					<h2>Most popular Destinations</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus orci vel nibh aliquam laoreet Aenean accumsan </p>
-				</div>
-			</div>
-		</div>
-		<div class="destination-slider-active owl-carousel">
-			<div class="single-destination">
-				<figure>
-					<a href="#"><img src="../images/destination/1.jpg" alt="">
-					</a>
-					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-					</figcaption>
-				</figure>
-				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>Sydney, Australia</a>
-					<h4>Opera House <span>3 Tours</span></h4>
-				</div>
-			</div> <!-- single popular destination  end-->
-
-			<div class="single-destination">
-				<figure>
-					<a href="#"><img src="../images/destination/5.jpg" alt="">
-					</a>
-					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-					</figcaption>
-				</figure>
-				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>London, Eangland</a>
-					<h4>Tower Bridge<span>5 Tours</span></h4>
-				</div>
-			</div> <!-- single popular destination  end-->
-
-			<div class="single-destination">
-				<figure>
-					<a href="#"><img src="../images/destination/3.jpg" alt="">
-					</a>
-					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-					</figcaption>
-				</figure>
-				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>Paris, France</a>
-					<h4>Eiffel Tower<span>4 Tours</span></h4>
-				</div>
-			</div> <!-- single popular destination  end-->
-
-			<div class="single-destination">
-				<figure>
-					<a href="#"><img src="../images/destination/4.jpg" alt="">
-					</a>
-					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-					</figcaption>
-				</figure>
-				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>New york, USA</a>
-					<h4>Statue Of Liberty<span>3 Tours</span></h4>
-				</div>
-			</div> <!-- single popular destination  end-->
-
-			<div class="single-destination">
-				<figure>
-					<a href="#"><img src="../images/destination/5.jpg" alt="">
-					</a>
-					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-					</figcaption>
-				</figure>
-				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>Agra, India</a>
-					<h4>Tajmahal<span>5 Tours</span></h4>
-				</div>
-			</div> <!-- single popular destination  end-->
+			<!-- single package end -->
 
 		</div>
 	</div>
 </section>
-<!-- end popular destination-->
-
-
-
-<!-- 本周热门轮播图 -->
-<section class="testimonial-two" id="testimonial_one">
-    <div class="testimonial-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <!-- start top media -->
-
-					<div class="slick-pagination" id="topWeek">
-                        <div class="slider-nav-two">
-                            <div class="images_single"><img src="../images/bgimage/discount6.jpg" alt="2" class="img-responsive"></div>
-                            <div class="images_single"><img src="../images/bgimage/package.jpg" alt="3" class="img-responsive"></div>
-                            <div class="images_single"><img src="../images/bgimage/long2.jpg" alt="2" class="img-responsive"></div>
-                            <div class="images_single"><img src="../images/bgimage/blog.jpg" alt="3" class="img-responsive"></div>
-                        </div>
-                    </div>
-
-					<!-- end top media images -->
-
-                    <!-- bottom testimonial message -->
-                    <div class="block-text">
-                        <div class="carousel-text slider-for-two">
-                            <div class="single-box">
-								<h3>Try incrediable bicycle emotions</h3>
-								<table>
-									<tr>
-										<td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
-										<td>Miami, Florida</td>
-									</tr>
-									<tr>
-										<td><i class="fa fa-calendar-check-o " aria-hidden="true"></i></td>
-										<td>2-3day</td>
-									</tr>
-									<tr>
-										<td><i class="fa fa-users" aria-hidden="true"></i></td>
-										<td>3-10</td>
-									</tr>
-								</table>
-                                <p>Everything you need to build and repair surfboard. We are the largest ...
-                                </p>
-                                <div class="client-bio">
-									<div class="commnet_img">
-										<img src="../images/blog/comments1.jpg" alt="member img" class="img-fluid">
-									</div>
-									<label>+ 3</label>
-                                    <span>People liked this</span>
-                                </div>
-								<div class="p_number">
-
-									<div style="height:36px;font-size:16px;">Price：<strong id="price_item_1">￥150.00</strong></div>
-
-									<div class="f_l add_chose">
-										<a class="reduce" onClick="setAmount.reduce('#qty_item_1')" href="javascript:void(0)">
-											-</a>
-										<input type="text" name="qty_item_1" value="1" id="qty_item_1" onKeyUp="setAmount.modify('#qty_item_1')" class="text" />
-										<a class="add" onClick="setAmount.add('#qty_item_1')" href="javascript:void(0)">
-											+</a>
-									</div>
-
-									<div class="f_l buy">
-										<label>Total:</label>
-										<span class="total-font" id="total_item_1">￥89.00</span>
-									</div>
-
-								</div>
-
-                            </div>
-                            <div class="single-box">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,  utrinyi dolore magna aliquam erat volutpat Upt wisi enimbf adiminim veniamp nostrud exer tatjhion ullamc orperea commodo consequ euismod laoreetore magna.
-                                </p>
-                                <div class="client-bio">
-                                    <h3>Blake Lively</h3>
-                                    <span>Martin, Parent</span>
-                                </div>
-                                </ul>
-                            </div>
-                            <div class="single-box">
-                                <p>Lorem ipsum dolor sit amet, consected diam nonummy nibh euismod tincidunt utrinyi dolore magna aliquam erat volutpat Upt wisi enimbf adiminim veniamp nostrud exer tatjhion ullamc orperea commodo consequ euismo dolore magna.
-                                </p>
-                                <div class="client-bio">
-                                    <h3>Charlie Puth</h3>
-                                    <span>Martin, Parent</span>
-                                </div>
-                            </div>
-                            <div class="single-box">
-                                <p>Lorem ipsum dolor sit amet, consectit, sed diam nonummy nibh euismod tincidunt utrinyi dolore magna alpat Upt wisi enimbf adiminim veniamp nostrud exer tatjhion ullamc orperea commodo consequ euismod laoreetna.
-                                </p>
-                                <div class="client-bio">
-                                    <h3>Jessica Alba</h3>
-                                    <span>Martin, Parent</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- bottom testimonial message -->
-                </div><!-- /.block-text -->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- testimonial area end here -->
-
-<!--story-->
-<section class="share_story">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="text-center">
-					<h2>share your stories</h2>
-					<p>join the community of awesome people,<br>
-						tell your story and share with all the world</p>
-				</div>
-			</div>
-		</div>
-			<!-- partners images -->
-		<div class="story_img">
-			<img src="../images/blog/6.jpg" class="img-responsive">
-		</div>
-		<div class="story_btn">
-			<a href="#" class="story_link rounded">learn more about stories >>></a>
-		</div>
-		<!-- end partners images -->
-	</div>
-</section>
-<!--end story section -->
-
+<!--end  popular packajge -->
 
 <!-- footer -->
 <footer class="footer-area">
@@ -821,5 +704,24 @@
     <!-- custom js -->
     <script src="../js/custom.js"></script>
 	<script type="text/javascript" src="../js/payfor.js"></script>
+	<!-- 下拉框 js -->
+	<script type="text/javascript" src="../js/selectFilter.js"></script>
+	<script type="text/javascript">
+		//本小插件支持移动端哦
+
+		//这里是初始化
+		$('.filter-box').selectFilter({
+			callBack : function (val){
+				//返回选择的值
+				console.log(val+'-是返回的值')
+			}
+		});
+        $('.filter-box2').selectFilter({
+            callBack : function (val){
+                //返回选择的值
+                console.log(val+'-是返回的值')
+            }
+        });
+	</script>
 </body>
 </html>
