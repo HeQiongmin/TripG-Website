@@ -752,7 +752,8 @@ header .main_nav .main-menu > li.active a:before {
 
 .popular-packages {
   background: #ffffff;
-  padding: 120px 0;
+  padding: 50px 0;
+  margin-top: 70px;
 }
 .popular-packages .single-package {
   margin-bottom: 30px;
@@ -840,7 +841,7 @@ header .main_nav .main-menu > li.active a:before {
 }
 .advbox{
   background: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
   position: relative;
@@ -852,7 +853,7 @@ header .main_nav .main-menu > li.active a:before {
   width: 90%;
   height: 75px;
   margin:0px auto 20px auto;
-  background: red;
+
 }
 .advbox .package-content {
   padding: 20px;
@@ -866,6 +867,38 @@ header .main_nav .main-menu > li.active a:before {
 }
 .advbox .package-content h3 a:hover {
   color: #f15b5c;
+}
+/*=====================================================
+.统计section css goes here
+=======================================================*/
+.stepbar{
+  height: 95px;
+  background: #fff;
+  margin-bottom: 30px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  position: relative;
+  -webkit-box-shadow: 0 0 20px 0 rgba(47, 47, 47, 0.05);
+  box-shadow: 0 0 20px 0 rgba(47, 47, 47, 0.05);
+  transition: all ease-in-out 0.5s;
+}
+.stepbar .table{
+  text-align: center;
+}
+.stepbar .table tr td{
+  vertical-align: middle;
+  padding-top: 28px;
+}
+.stepbar i{
+  font-size: 40px;
+}
+.stepbar label{
+  font-size: 20px;
+  margin: auto;
+}
+.stepbar .input-group {
+  width: 155px;
+  height: 40px;
 }
 /*=====================================================
 06.Counter  section css goes here
@@ -5114,6 +5147,40 @@ aside .booking-form .form_btn {
   background: #f15b5c;
 }
 .contact-form .form-group .button i {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  margin-right: 10px;
+  padding: 0px;
+}
+/*=====================================================
+.建团form CSS
+ =======================================================*/
+.establish-form .table tr td{
+  vertical-align: middle;
+}
+.establish-form label{
+  color: #00c5c2;
+  font-size: 22px;
+}
+.establish-form .form-group .button {
+  width: 135px;
+  height: 50px;
+  border-radius: 3px;
+  border: 0px solid;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: #ffffff;
+  background: #00c5c2;
+  font-weight: 500;
+}
+.establish-form .form-group .button:hover {
+  background: #f15b5c;
+}
+.establish-form .form-group .button i {
   position: relative;
   display: inline-block;
   color: #fff;

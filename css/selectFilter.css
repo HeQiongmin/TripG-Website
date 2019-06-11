@@ -51,7 +51,18 @@ li {
 	cursor: pointer;
 	text-align: center;
 }
-
+.filter-text .filter-vehicle {
+	width: 80%;
+	height: 75px;
+	line-height: 75px;
+	border: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0;
+	cursor: pointer;
+	text-align: center;
+}
 .filter-list {
 	display: none;
 	width: 100%;
@@ -120,7 +131,7 @@ li {
 	width: 35px;
 	height: 100%;
 	background-repeat: no-repeat;
-    background-image: url(../images/icon_arrow_down.svg);
+    background-image: url(../images/icon/icon_arrow_down.svg);
     background-size: 100%;
     right: 40px;
     top: 26px;
@@ -157,4 +168,24 @@ li {
 
 .filter-list::-webkit-scrollbar-thumb {
 	background: #CBCBCB;
+}
+/*=====================================================
+.车辆section css goes here
+=======================================================*/
+.vehiclebox{
+	width: 444px;
+	height: 70px;
+}
+.advbox .vehiclebox{
+	padding-left: 63px;
+}
+.icon-vehicle {
+	width: 35px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-image: url(../images/icon/driver.svg);
+	background-size: 100%;
+	right: 20px;
+	top: 20px;
+	transition: all .2s;
 }
