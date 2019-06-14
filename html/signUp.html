@@ -250,33 +250,156 @@
 					</form>
 				</div><!-- // step2 end -->
 				<div id="step3" class="step hide">
-					<form action="" method="post" id="step3_frm">
+					<form action="" method="post" id="step3_frm" role="form">
 						<div class="frm_control_group">
-							<label class="frm_label">真实姓名</label>
-							<div class="frm_controls">
-								<input type="text" name="" class="frm_input name" maxlength="32"/>
-								<p class="frm_tips">请填写真实姓名</p>
-							</div>
-						</div>
-						<div class="frm_control_group">
-							<label class="frm_label">手机号</label>
-							<div class="frm_controls">
-								<input type="text" name="" class="frm_input phone"/>
-								<p class="frm_tips">请填写常用手机号</p>
-							</div>
-						</div>
-						<div class="frm_control_group">
-							<label class="frm_label">手机验证码</label>
-							<div class="frm_controls">
-								<input type="text" name="" class="frm_input phoneYzm"/>
-								<input type="button" value="获取验证码" class="btn btn_default" />
-							</div>
+							<h3>Choose fields in which your are interested in</h3>
+							<table class="pre_table">
+								<tr>
+									<td>
+										<div class="checkbox_container">
+											<input type="checkbox" class="checkbox">
+											<img src="../images/preference/Psychology.svg" class="img-fluid">
+										</div>
+										<label>Psychology</label>
+									</td>
+									<td>
+										<div class="checkbox_container">
+											<input type="checkbox" class="checkbox">
+											<img src="../images/preference/finance.svg" class="img-fluid">
+										</div>
+										<label>Finance</label>
+									</td>
+									<td>
+									<div class="checkbox_container">
+										<input type="checkbox" class="checkbox">
+										<img src="../images/preference/music.svg" class="img-fluid">
+									</div>
+									<label>Music</label>
+								</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="checkbox_container">
+											<input type="checkbox" class="checkbox">
+											<img src="../images/preference/food.svg" class="img-fluid">
+										</div>
+										<label>Food</label>
+									</td>
+									<td>
+										<div class="checkbox_container">
+											<input type="checkbox" class="checkbox">
+											<img src="../images/preference/Fitness.svg" class="img-fluid">
+										</div>
+										<label>Fitness</label>
+									</td>
+									<td>
+										<div class="checkbox_container">
+											<input type="checkbox" class="checkbox">
+											<img src="../images/preference/hiking.svg" class="img-fluid">
+										</div>
+										<label>Hiking</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="checkbox_container">
+											<input type="checkbox" class="checkbox">
+											<img src="../images/preference/photography.svg" class="img-fluid">
+										</div>
+										<label>Photography</label>
+									</td>
+									<td>
+										<div class="checkbox_container">
+											<input type="checkbox" class="checkbox">
+											<img src="../images/preference/swim.svg" class="img-fluid">
+										</div>
+										<label>Swim</label>
+									</td>
+									<td>
+										<div class="checkbox_container">
+											<input type="checkbox" class="checkbox">
+											<img src="../images/preference/Shopping.svg" class="img-fluid">
+										</div>
+										<label>Shopping</label>
+									</td>
+								</tr>
+							</table>
 						</div>
 						<div class="toolBar">
-							<a id="finishedBtn" class="btn btn_primary" href="javascript:;">完成</a>
+							<a id="nextBtn" class="btn btn_primary" href="javascript:;">Continue</a>
 						</div>
 					</form>
 				</div><!-- // step3 end -->
+				<div id="step4" class="step hide">
+					<form action="" method="post" id="step3_frm" role="form">
+						<div class="frm_control_group">
+							<form action="" method="post" id="step2_frm">
+								<div class="">
+									<div class="frm_control_group">
+										<div class="guide_title">
+											<h3>Guide information table(optional)</h3>
+											<a href="#">Don't need this? or just skip</a>
+										</div>
+										<table class="table">
+											<tr>
+												<td>
+													<label class="frm_label">Vehicle</label>
+													<div class="frm_controls">
+														<input type="text" name="" class="frm_input" maxlength="32"/>
+													</div>
+												</td>
+												<td>
+													<label class="frm_label">Capacity</label>
+													<div class="frm_controls">
+														<input type="text" name="" class="frm_input" maxlength="32"/>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="frm_label">University*</label>
+													<div class="frm_controls">
+														<input type="text" name="" class="frm_input" maxlength="32"/>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="frm_label">Student Card Number*</label>
+													<div class="frm_controls">
+														<input type="text" name="" class="frm_input" maxlength="32"/>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="frm_label">Detail location*</label>
+													<div class="frm_controls">
+														<input type="text" name="" class="frm_input" maxlength="32"/>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<div class="toolBar">
+										<a id="nextBtn" class="btn btn_primary" href="javascript:;">Continue</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</form>
+				</div><!-- // step4 end -->
+				<div id="step5" class="step hide">
+						<div class="frm_control_group">
+							<h3>Thanks for registering</h3>
+							<div class="register_img">
+
+							</div>
+						</div>
+					<div class="toolBar">
+						<a id="nextBtn" class="btn btn_primary" href="javascript:;">Continue</a>
+					</div>
+				</div><!-- // step5 end -->
 			</div>
 		</div><!-- // container end -->
 	</div><!-- // wrapper end -->
